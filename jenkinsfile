@@ -11,13 +11,13 @@ pipeline {
 
         stage('Compile Java Code') {
             steps {
-                bat 'javac src/calculator.java'
+                bat 'javac src\\Calculator.java'
             }
         }
 
         stage('Run Java Program') {
             steps {
-                bat 'java -cp src calculator'
+                bat 'java -cp src Calculator'
             }
         }
     }
